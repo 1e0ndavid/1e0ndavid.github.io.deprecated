@@ -30,7 +30,7 @@ plugins:
 titles_from_headings:
   enabled:     True
   strip_title: False
-  collections: True
+  collections: False
 
 highlighter: rouge
 markdown: kramdown
