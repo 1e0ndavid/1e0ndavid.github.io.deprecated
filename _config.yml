@@ -6,7 +6,7 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Welcome to my new blog!
+title:  my new blog
 description: ❤
 github_username: jianbodai
 
@@ -30,7 +30,7 @@ plugins:
 titles_from_headings:
   enabled:     False
   strip_title: False
-  collections: True
+  collections: False
 
 highlighter: rouge
 markdown: kramdown
