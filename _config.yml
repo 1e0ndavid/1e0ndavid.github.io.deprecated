@@ -28,9 +28,9 @@ plugins:
   - jekyll-octicons
 
 titles_from_headings:
-  enabled:     true
+  enabled:     False
   strip_title: true
-  collections: true
+  collections: False
 
 highlighter: rouge
 markdown: kramdown
