@@ -35,5 +35,5 @@ comments:
 
 plugins:
  - jekyll-feed
- 
+
 mathjax: true
