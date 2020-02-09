@@ -10,6 +10,6 @@ layout: page
 
 
 <font style="margin-left:350px" size="10">
-I am an Artificial Interlligen MSc student in Univerisity of Edinburgh
+I am an Artificial Interlligen MSc student in Univerisity of Edinburgh.
 </font>
 
