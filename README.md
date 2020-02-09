@@ -6,9 +6,7 @@ layout: page
 ## Jianbo Dai
 I am an Artificial Interlligen MSc student in Univerisity of Edinburgh where I learned machine learning and natural language processing. Previously, I had bachelors in University of Manchester and Dalian Unversity of Technology but majored in Chemical Engineering, hence I have a solid math background.
 
-<img src="/assets/photo.jpg" alt="me" width="200"/>
-
-![me](/assets/photo.jpg)
+<img src="/assets/photo.jpg" alt="me" width="180"/>
 
 ## Screenshots
 
