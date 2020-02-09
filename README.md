@@ -5,7 +5,7 @@ layout: page
 ---
 ## Jianbo Dai
 <div>
-<img style="position:absolute;margin-left:960px" src="/assets/photo.jpg" width="180" alt="me">
+<img style="position:absolute;margin-left:100px" src="/assets/photo.jpg" width="180" alt="me">
 </div>
 
 
