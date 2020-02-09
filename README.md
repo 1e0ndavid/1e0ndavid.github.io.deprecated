@@ -1,5 +1,5 @@
 ---
-title: "Jianbo Dai"
+title: "About"
 permalink: "/about/"
 layout: page
 ---
