@@ -3,7 +3,8 @@ title: "About"
 permalink: "/about/"
 layout: page
 ---
-## Installation
+## Jianbo Dai
+I am an Artificial Interlligen MSc student in Univerisity of Edinburgh where I learned machine learning and natural language processing. Previously, I had bachelors in University of Manchester and Dalian Unversity of Technology but majored in Chemical Engineering, hence I have a solid math background.
 
 Just fork the repo and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
 
