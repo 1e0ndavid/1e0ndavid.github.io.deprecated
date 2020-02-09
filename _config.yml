@@ -26,8 +26,8 @@ navigation:
 
 external:                    # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "jianbodai:jianbodai819@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/1e0ndavid"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+#   - {title: Github, icon: github, url: "https://github.com/1e0ndavid"}
+#   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus: ""                # see https://disqus.com/
