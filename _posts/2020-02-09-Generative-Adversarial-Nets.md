@@ -4,6 +4,7 @@ mathjax: true
 layout: post
 categories: GAN
 ---
+<center>生成对抗网络</center>
 
 # 生成对抗网络
 
