@@ -1,6 +1,6 @@
 title: "Blog Title"
 author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b> by <b><a href=\"https://github.com/niklasbuschmann\">@niklasbuschmann</a></b>"
+description: "Machine Learning & Natural Language Processing"
 permalink: /:title/
 lang: "en"
 date_format: "%B %d, %Y"
