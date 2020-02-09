@@ -9,7 +9,7 @@ layout: page
 </div>
 
 
-<font style="margin-left:350px" size="10">
+<font style="margin-left:350px" size="5">
 I am an Artificial Interlligen MSc student in Univerisity of Edinburgh.
 </font>
 
