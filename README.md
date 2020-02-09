@@ -8,11 +8,5 @@ I am an Artificial Interlligen MSc student in Univerisity of Edinburgh where I l
 
 <img src="/assets/photo.jpg" alt="me" width="180"/>
 
-## Screenshots
-
-<div class="large" markdown="1">
-
-![screenshot](https://user-images.githubusercontent.com/4943215/73125195-5fa42200-3fa4-11ea-89f8-d09c1d6fe252.png)
-
-</div>
+<img style="position:absolute;margin-left:960px" src="/assets/photo.jpg" width="180" alt="me">
 
