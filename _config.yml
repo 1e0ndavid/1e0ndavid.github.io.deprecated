@@ -15,7 +15,7 @@ show_title: false            # always keep the site title visible
 
 # Styling
 
-dark_header: True           # always keep the header dark
+dark_header: false           # always keep the header dark
 minimal: false               # minima-inspired style without box-shadows
 
 # Menu
