@@ -8,7 +8,7 @@ layout: page
 <img style="position:absolute;margin-left:500px" src="/assets/photo.jpg" width="180" alt="me">
 </div>
 
-<font style="margin-left:5px margin-right:200px" size="4">
+<font style="margin-right:200px" size="4">
 I am an Artificial Interlligen MSc student in Univerisity of Edinburgh where I learned machine learning and natural language processing. Previously, I had bachelors in University of Manchester and Dalian Unversity of Technology but majored in Chemical Engineering.
 </font>
 
