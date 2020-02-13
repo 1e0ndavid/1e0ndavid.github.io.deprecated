@@ -73,7 +73,7 @@ $$ \frac{1}{2} $$ 时，一个唯一解存在。当在 *G* 和 *D* 都被定义�
 情况下，$$log(1-D(G(z))$$饱和了。因此我们训练G去最大化$$logD(G(z))$$而不是训练G去最小化$$log(1-D(G(z))$$。这个目标函数使G和D的动力
 学稳定点相同但能够在学习的早期提供更大的梯度。
 
-![equ1](../assets/process.png)
+<img src="../assets/process.png" alt="pro" width="1000">
 
 图一：生成对抗网络
 
