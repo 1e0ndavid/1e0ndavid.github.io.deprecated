@@ -7,6 +7,7 @@ categories: GAN
 <center><font size="6">生成对抗网络</font></center>
 
 <center><font size="3">Ian J. Goodfellow∗, Jean Pouget-Abadie†, Mehdi Mirza, Bing Xu, David Warde-Farley,</font></center>
+
 <center><font size="3">Sherjil Ozair‡, Aaron Courville, Yoshua Bengio</font></center>
 
 <center><font size="5">摘要</font></center>
