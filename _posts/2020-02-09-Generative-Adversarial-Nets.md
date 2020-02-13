@@ -62,8 +62,7 @@ $$ \frac{1}{2} $$ 时，一个唯一解存在。当在 *G* 和 *D* 都被定义�
 量的多层感知器$$D(z;\theta_d)$$。其中D（x）代表了来自数据而非$$p_g$$的概率x。我们训练D来使得最大化将正确的标签分配给训练样本和来自G的
 样本的概率。我们也同时训练G来最小化$$log(1-D(G(z))$$。换句话说，D和G的训练是关于值函数$$V(D;G)$$的极小化极大的二人博弈问题：
 
-
-<img src="../assets/equ1.png"  alt="eq1" width="300" height="100"/>
+<img src="../assets/equ1.png" alt="eq1" width="50" height="50">
 
 ![equ1](../assets/equ1.png)
 
