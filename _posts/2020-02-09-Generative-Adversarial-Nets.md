@@ -6,7 +6,7 @@ categories: GAN
 ---
 <center><font size="6">生成对抗网络</font></center>
 
-作者：xxx
+<center><font size="3">Ian J. Goodfellow∗, Jean Pouget-Abadie†, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair‡, Aaron Courville, Yoshua Bengio</font></center>
 
 <center><font size="5">摘要</font></center>
 
@@ -95,9 +95,9 @@ $$ \frac{1}{2} $$ 时，一个唯一解存在。当在 *G* 和 *D* 都被定义�
 
 这个框架允许许多简易的拓展：
 
-1. 通过将 **c** 加入 *G* 和 *D* 中可以得到条件生成模型$$p(x|c)$$。
+1. 通过将 **c** 加入 *G* 和 *D* 中可以得到条件生成模型p(x|c)。
 2. 通过训练一个辅助网络，学习近似推断可以被用于预测给定 **x** 情况下的 **z**。这和wake-sleep算法训练出的推理网络类似，但是它具有一个优
 势，就是在生成器网络训练完成后，这个推理网络可以针对固定的生成器网络进行训练。
-3. 能够近似建模所有条件概率$$p(x_s|x_\$)$$，其中S是一个
+3. 能够近似建模所有条件概率p(x_s|x_\$)，其中S是一个
 
 本质上，
