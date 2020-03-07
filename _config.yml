@@ -23,10 +23,10 @@ minimal: false               # minima-inspired style without box-shadows
 navigation:
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
-  - {file: "homepage.html", icon: home}
+  - {file: "homepage.html", icon: address-card}
 
 external:                    # see http://fontawesome.com/icons
-  - {title: Zhihu, icon: envelope, url: "https://www.zhihu.com/people/wang-ming-wei-70-76"}
+  - {title: Zhihu, icon: Zhihu, url: "https://www.zhihu.com/people/wang-ming-wei-70-76"}
   - {title: Github, icon: github, url: "https://github.com/1e0ndavid"}
   - {title: Mail, icon: envelope, url: "mailto:jianbodai819@gmai.com"}
 #   - {title: Subscribe, icon: rss, url: "/feed.xml"}
