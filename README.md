@@ -25,6 +25,8 @@ I'm am looking forward to be part of <a href="http://edinburghnlp.inf.ed.ac.uk/"
 email&nbsp;me&nbsp;here:&nbsp;jianbodai819@gmail.com&nbsp;s1792542@sms.ed.ac.uk&nbsp;or&nbsp;502478374@qq.com
 </p>
 <p>
+<span class="fs028rem">满意度:</span>
+<span class="fs028rem">try</span>
 I am an Artificial Intelligence MSc student in University of Edinburgh where I learned machine learning and natural language processing. Previously, I had bachelors in University of Manchester and Dalian University of Technology but majored in Chemical Engineering.
 Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a> for my master project on Morphological Analysis. My research interests fall in semantic parsing.
 
