@@ -35,7 +35,7 @@ To find more information about me, you can look at my CV(<a href="https://github
 <p>
 </p><ul>
 <li><a href="research.html">About me</a>: research interests, biography.</li>
-<li><a href="test.html">Publications</a>: complete list.</li>
+<li><a href="./test.html">TestPublications</a>: complete list.</li>
 <li><a href="personal.html">Personal</a>: for those who are inclined to be nosy.</li>
 </ul>
 <p></p>
