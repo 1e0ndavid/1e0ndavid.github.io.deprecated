@@ -12,9 +12,10 @@ permalink: "/about/"
             <hr>
             <h1>Jianbo Dai</h1>
             <p>
-                <img src="../assets/photo.jpg" alt="me" width="200" align ="right">
+                <img src="../assets/photo.jpg" alt="me" width="240" align ="right">
                 <br>
                 Aloha!
+                <br>
                 <br>
                 I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
                 of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural
@@ -24,11 +25,6 @@ permalink: "/about/"
                 <br>
                 <br>
                 I'm am looking forward to finding an algorithm engineering internship after graduation.
-                <br>
-            </p>
-                <br>
-                <br>
-            <p>
                 <br>
                 <br>
                 To find more information about me, you can take a look at my CV(<a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_EN_1_1.pdf">English</a>
