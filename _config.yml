@@ -23,7 +23,7 @@ minimal: false               # minima-inspired style without box-shadows
 navigation:
   - {file: "index.html", icon: book-open}
   - {file: "README.md", icon: address-card}
-  - {file: "homepage.html", icon: home}
+  - {file: "homepage11.md", icon: home}
 
 external:                    # see http://fontawesome.com/icons
   - {title: Zhihu, icon: zhihu, url: "https://www.zhihu.com/people/wang-ming-wei-70-76"}

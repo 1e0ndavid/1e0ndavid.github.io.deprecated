@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 ---
 title: "Homepage"
 permalink: "/home/"
 ---
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
