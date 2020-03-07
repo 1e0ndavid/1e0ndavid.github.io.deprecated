@@ -22,7 +22,7 @@ minimal: false               # minima-inspired style without box-shadows
 
 navigation:
   - {file: "index.html", icon: book-open}
-#  - {file: "homepage.md", icon: home}
+#  - {file: "old.md", icon: home}
   - {file: "README.md", icon: address-card}
 
 external:                    # see http://fontawesome.com/icons
