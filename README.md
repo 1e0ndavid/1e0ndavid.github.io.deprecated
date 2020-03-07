@@ -71,7 +71,7 @@ permalink: "/about/"
                 United Kingdom<br>
                 (+44) 07913109707<br>
                 (+86) 13486963560<br>
-                email<b>me<b>here:s1792542@sms.ed.ac.uk
+                email me here: s1792542@sms.ed.ac.uk<br>
             </p>
             <hr>
             <font size="-1">
