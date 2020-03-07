@@ -3,7 +3,13 @@ title:  "Generative Adversarial Nets"
 mathjax: true
 layout: post
 categories: GAN
----
+---------------
+我们提出了一个应用对抗过程来估算生成模型的新框架，在这个框架中我们同时训练了两个模型，分别是一个能捕捉数据分布的生成模型 *G* 和一个判别模
+型 *D*, *D* 可以估计一个来自训练数据而非模型 *G* 的样本的概率。*G* 的训练过程的目的是最大化 *D* 出错的概率。这个框架对应于一个二元极小
+极大博弈问题（minimax two-player game）。在任意的函数 *G* 和 *D* 组成的空间中，当 *G* 重建训练数据的发布以及 *D* 处处都等于
+$$ \frac{1}{2} $$ 时，一个唯一解存在。当在 *G* 和 *D* 都被定义成多层感知器时，整个系统可以用反向传播算法来训练。在整个训练或生成样本时
+并不需要任何马尔可夫链（Markov chains）或展开的近似推断网络。通过对生成样本定性和定量的评估，我们用实验展示了这个框架的潜力。
+
 <center><font size="6">生成对抗网络</font></center>
 
 <center><font size="3">Ian J. Goodfellow∗, Jean Pouget-Abadie†, Mehdi Mirza, Bing Xu, David Warde-Farley,</font></center>
