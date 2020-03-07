@@ -3,9 +3,14 @@ title: "About"
 permalink: "/about/"
 layout: page
 ---
-<body> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
 
-<div class="photo" style="float: left; margin-right: 1.5em;  padding-bottom: 2ex;"><h1><a href="http://homepages.inf.ed.ac.uk/sgwater/images/sgwater.jpg"></a></h1></div>
+<div class="photo" style="float: left; margin-right: 1.5em;  padding-bottom: 2ex;"><h1><a href=""></a></h1></div>
 <div style="float: left; padding-top: 1ex;  max-width: 65ex">
 <h1>Jianbo Dai</h1>
 
@@ -80,3 +85,4 @@ email&nbsp;me&nbsp;here:s1792542@sms.ed.ac.uk&
 </div>
 
 </body>
+</html>
