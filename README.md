@@ -9,12 +9,11 @@ layout: page
     <title>Homepage</title>
 </head>
 <body>
-
-<div class="photo" style="float: left; margin-right: 1.5em;  padding-bottom: 2ex;"><h1><a href=""></a></h1></div>
+<!--<div class="photo" style="float: left; margin-right: 1.5em;  padding-bottom: 2ex;"><h1><a href=""></a></h1></div>-->
 <div style="float: left; padding-top: 1ex;  max-width: 65ex">
 <h1>Jianbo Dai</h1>
 
-<p>Master<br>
+<p>Master<br><img src="../assets/photo.jpg" alt="me" width="200" align ="left">
 <a href="http://www.inf.ed.ac.uk/">School of Informatics</a><br>
 <a href="http://www.ed.ac.uk/">University of Edinburgh</a><br>
 I'm am looking forward to be part of <a href="http://edinburghnlp.inf.ed.ac.uk/">Edinburgh NLP</a> and the <a href="http://datascience.inf.ed.ac.uk/">Centre for Doctoral Training in Data Science</a> </p>
@@ -23,7 +22,6 @@ I'm am looking forward to be part of <a href="http://edinburghnlp.inf.ed.ac.uk/"
 <b></b>
 email&nbsp;me&nbsp;here:&nbsp;jianbodai819@gmail.com&nbsp;s1792542@sms.ed.ac.uk&nbsp;or&nbsp;502478374@qq.com
 </p>
-
 <p>
 I am an Artificial Intelligence MSc student in University of Edinburgh where I learned machine learning and natural language processing. Previously, I had bachelors in University of Manchester and Dalian University of Technology but majored in Chemical Engineering.
 Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a> for my master project on Morphological Analysis. My research interests fall in semantic parsing.

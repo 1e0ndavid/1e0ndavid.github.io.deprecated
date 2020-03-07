@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 ---
 title: "Homepage"
 permalink: "/home/"
 ---
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
@@ -81,6 +80,6 @@ email&nbsp;me&nbsp;here:s1792542@sms.ed.ac.uk&
 <!-- hhmts end -->
 </font>
 </div>
-<img src="../assets/photo.jpg" alt="me" width="200" align ="left">
+
 </body>
 </html>
