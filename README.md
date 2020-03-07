@@ -13,7 +13,6 @@ permalink: "/about/"
             <h1>Jianbo Dai</h1>
             <p>
                 <img src="../assets/photo.jpg" alt="me" width="240" align ="right">
-                <br>
                 Aloha!
                 <br>
                 <br>
