@@ -14,7 +14,7 @@ permalink: "/about/"
             <p>
                 <img src="../assets/photo.jpg" alt="me" width="200" align ="right">
                 <br>
-                Master
+                Aloha!
                 <br>
                 I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
                 of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural
@@ -23,7 +23,7 @@ permalink: "/about/"
                 for my master project on Morphological Analysis. My research interest basically falls in neural semantic parsing.
                 <br>
                 <br>
-                I'm am looking forward to finding an algorithm engineering internship
+                I'm am looking forward to finding an algorithm engineering internship after graduation.
                 <br>
             </p>
                 <br>
