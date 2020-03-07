@@ -16,10 +16,12 @@ permalink: "/about/"
                 <br>
                 Master
                 <br>
+                I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
+                of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural
+                language processing. Previously, I had bachelors in University of Manchester and Dalian University of Technology
+                but majored in Chemical Engineering. Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a>
+                for my master project on Morphological Analysis. My research interest basically falls in neural semantic parsing.
                 <br>
-                <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
-                <br>
-                <a href="http://www.ed.ac.uk/">University of Edinburgh</a>
                 <br>
                 I'm am looking forward to finding an algorithm engineering internship
                 <br>
@@ -27,8 +29,6 @@ permalink: "/about/"
                 <br>
                 <br>
             <p>
-                I am an Artificial Intelligence MSc student in University of Edinburgh where I learned machine learning and natural language processing. Previously, I had bachelors in University of Manchester and Dalian University of Technology but majored in Chemical Engineering.
-                Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a> for my master project on Morphological Analysis. My research interests fall in semantic parsing.
                 <br>
                 <br>
                 To find more information about me, you can look at my CV(<a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_EN_1_1.pdf">English</a> / <a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_CN_1_0.pdf">Chinese</a>), updated 2020.03).
