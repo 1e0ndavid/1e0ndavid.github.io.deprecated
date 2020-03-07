@@ -21,7 +21,7 @@ permalink: "/about/"
                 <br>
                 <a href="http://www.ed.ac.uk/">University of Edinburgh</a>
                 <br>
-                I'm am looking forward to finding an internship in algorithm engineer
+                I'm am looking forward to finding an algorithm engineering internship
                 <br>
             </p>
                 <br>
