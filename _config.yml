@@ -1,6 +1,6 @@
 title: "Blog Title"
 author: "Blog Author"
-description: "Machine Learning & Natural Language Processing"
+description: "Keep moving. Don't settle."
 permalink: /:title/
 lang: "en"
 date_format: "%B %d, %Y"
@@ -11,7 +11,7 @@ sidebar: true                # show a sidebar instead of the usual header
 show_excerpts: false         # show article excerpts on the home page
 show_related: true           # show the previous and next links after every post
 show_description: true       # show the site description in the sidebar
-show_title: false            # always keep the site title visible
+show_title: true            # always keep the site title visible
 
 # Styling
 
@@ -26,8 +26,9 @@ navigation:
   - {file: "homepage.html", icon: home}
 
 external:                    # see http://fontawesome.com/icons
-#   - {title: Mail, icon: envelope, url: "jianbodai:jianbodai819@gmail.com"}
+  - {title: Zhihu, icon: envelope, url: "https://www.zhihu.com/people/wang-ming-wei-70-76"}
   - {title: Github, icon: github, url: "https://github.com/1e0ndavid"}
+  - {title: Mail, icon: envelope, url: "mailto:jianbodai819@gmai.com"}
 #   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
