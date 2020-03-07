@@ -1,7 +1,7 @@
 title: "Jianbo's Blog"
 author: "Jianbo Dai"
 description: "Keep moving. Don't settle."
-permalink: /:title/
+permalink: /:titletest/
 lang: "en"
 date_format: "%B %d, %Y"
 
