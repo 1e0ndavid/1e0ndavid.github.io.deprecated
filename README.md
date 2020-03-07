@@ -17,9 +17,12 @@ permalink: "/about/"
                 Master
                 <br>
                 <br>
-                <a href="http://www.inf.ed.ac.uk/">School of Informatics</a><br>
-                <a href="http://www.ed.ac.uk/">University of Edinburgh</a><br>
-                I'm am looking forward to be part of <a href="http://edinburghnlp.inf.ed.ac.uk/">Edinburgh NLP</a> and the <a href="http://datascience.inf.ed.ac.uk/">Centre for Doctoral Training in Data Science</a><br>
+                <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
+                <br>
+                <a href="http://www.ed.ac.uk/">University of Edinburgh</a>
+                <br>
+                I'm am looking forward to finding an internship in algorithm engineer
+                <br>
             </p>
                 <br>
                 <br>
