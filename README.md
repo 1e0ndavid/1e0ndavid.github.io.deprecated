@@ -31,7 +31,8 @@ permalink: "/about/"
             <p>
                 <br>
                 <br>
-                To find more information about me, you can look at my CV(<a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_EN_1_1.pdf">English</a> / <a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_CN_1_0.pdf">Chinese</a>), updated 2020.03).
+                To find more information about me, you can take a look at my CV(<a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_EN_1_1.pdf">English</a>
+                / <a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_CN_1_0.pdf">Chinese</a>), updated 2020.03).
             </p>
         </div>
         <div style="clear: left; padding-top: 1ex;">
