@@ -23,6 +23,7 @@ minimal: false               # minima-inspired style without box-shadows
 navigation:
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
+  - {file: "homepage.html", icon: home}
 
 external:                    # see http://fontawesome.com/icons
 #   - {title: Mail, icon: envelope, url: "jianbodai:jianbodai819@gmail.com"}
