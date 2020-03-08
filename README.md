@@ -13,10 +13,7 @@ permalink: "/about/"
             <h1>Jianbo Dai</h1>
             <p>
                 <img src="../assets/photo.jpg" alt="me" width="240" align ="right">
-                Aloha!
-                <br>
-                <br>
-                I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
+                Aloha! I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
                 of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural
                 language processing. Previously, I had bachelors in University of Manchester and Dalian University of Technology
                 but majored in Chemical Engineering. Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a>
@@ -69,8 +66,7 @@ permalink: "/about/"
                 Edinburgh, EH9 1NJ<br>
                 United Kingdom<br>
                 (+44) 07913109707<br>
-                (+86) 13486963560<br>
-                email me here: s1792542@sms.ed.ac.uk<br>
+                email me here: jianbodai819@gmail.com<br>
             </p>
             <hr>
             <font size="-1">
