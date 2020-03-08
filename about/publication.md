@@ -1,6 +1,6 @@
 ---
 title: "Publication"
-permalink: "/publication/"
+permalink: "/about/publication/"
 ---
 <html lang="en">
     <head>
