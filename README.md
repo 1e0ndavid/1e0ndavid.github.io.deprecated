@@ -38,7 +38,7 @@ permalink: "/about/"
                     <a href="publication.html">Publications</a>: complete list.
                 </li>
                 <li>
-                    <a href="personal.html">Personal</a>: for those who are inclined to be nosy.
+                    <a href="test.html">Personal</a>: for those who are inclined to be nosy.
                 </li>
             </ul>
             <p> </p>
