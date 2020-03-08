@@ -35,7 +35,7 @@ permalink: "/about/"
                     <a href="research.html">About me</a>: research interests, biography.
                 </li>
                 <li>
-                    <a href="./test.html">Publications</a>: complete list.
+                    <a href="../test.html">Publications</a>: complete list.
                 </li>
                 <li>
                     <a href="personal.html">Personal</a>: for those who are inclined to be nosy.
