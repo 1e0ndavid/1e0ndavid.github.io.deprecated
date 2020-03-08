@@ -32,13 +32,10 @@ permalink: "/about/"
             <p> </p>
             <ul>
                 <li>
-                    <a href="publication.md">About me</a>: research interests, biography.
+                    <a href="publication.html">About me</a>: research interests, biography.
                 </li>
                 <li>
                     <a href="publication.html">Publications</a>: complete list.
-                </li>
-                <li>
-                    <a href="test.html">Personal</a>: for those who are inclined to be nosy.
                 </li>
             </ul>
             <p> </p>
