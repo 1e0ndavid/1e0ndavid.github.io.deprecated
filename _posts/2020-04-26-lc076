@@ -1,8 +1,11 @@
 ---
 title: "76.最小覆盖子串"
 style: post
-categories: Leetcode, slideWindow, twoPointers, hard
+categories: Leetcode, slidingWindow, twoPointers, hard
 ---
 
 [最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/)
 
+这个寻找字串，容易看出来是用滑动窗口法。其中长的字符串为S，短的字符串为T，
+
+关于怎么实现寻找覆盖的字串，我们可以用一个哈希表来记录
