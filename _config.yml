@@ -38,4 +38,4 @@ comments:
 plugins:
  - jekyll-feed
 
-mathjax: true
+mathjax: false
