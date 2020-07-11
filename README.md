@@ -13,18 +13,14 @@ permalink: "/about/"
             <h1>Jianbo Dai</h1>
             <p>
                 <img src="../assets/photo.jpg" alt="me" width="240" align ="right">
-                Aloha! I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a>
-                of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural
-                language processing. Previously, I had bachelors in University of Manchester and Dalian University of Technology
-                but majored in Chemical Engineering. Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a>
-                for my master project on Morphological Analysis and Lemmatization, in addition, I am doing summer research which is relevant to semantic parsing of SQL with Yale LILY Group. My research interest basically falls in neural semantic parsing.
+                Hello! I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a> of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural language processing. I am on my track to get a distinction degree at UoE. Previously, I had bachelors in <a href="https://www.manchester.ac.uk">University of Manchester</a> and <a href="http://en.dlut.edu.cn">Dalian University of Technology</a> but majored in Chemical Engineering. Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a> for my master project on Morphological Analysis and Lemmatization, in addition, I am doing summer research which is relevant to semantic parsing of SQL with Yale LILY Group. My research interest basically falls in neural semantic parsing.
                 <br>
                 <br>
                 I'm am looking forward to finding an algorithm engineering internship after graduation.
                 <br>
                 <br>
                 To find more information about me, you can take a look at my CV (<a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_EN_1_3.pdf">English</a>
-                / <a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_CN_1_0.pdf">Chinese</a>), updated 2020.07).
+                / <a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_CN_1_2.pdf">Chinese</a>), updated 2020.07).
             </p>
         </div>
         <div style="clear: left; padding-top: 1ex;">
