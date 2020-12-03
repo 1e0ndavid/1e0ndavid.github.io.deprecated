@@ -13,10 +13,10 @@ permalink: "/about/"
             <h1>Jianbo Dai</h1>
             <p>
                 <img src="../assets/photo.jpg" alt="me" width="240" align ="right">
-                Hello! I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a> of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural language processing. I am on my track to get a distinction degree at UoE. Previously, I had bachelors in <a href="https://www.manchester.ac.uk">University of Manchester</a> and <a href="http://en.dlut.edu.cn">Dalian University of Technology</a> but majored in Chemical Engineering. Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a> for my master project on Morphological Analysis and Lemmatization, in addition, I am doing summer research which is relevant to semantic parsing of SQL with Yale LILY Group. My research interest basically falls in neural semantic parsing.
+                Hello! I am an Artificial Intelligence MSc student in <a href="http://www.inf.ed.ac.uk/">School of Informatics</a> of <a href="http://www.ed.ac.uk/">University of Edinburgh</a> where I learned machine learning and natural language processing. I get a distinction degree at UoE. Previously, I had bachelors in <a href="https://www.manchester.ac.uk">University of Manchester</a> and <a href="http://en.dlut.edu.cn">Dalian University of Technology</a> but majored in Chemical Engineering. Now I am luckily supervised by <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Golderwater</a> for my master project on Morphological Analysis and Lemmatization, in addition, I am doing summer research which is relevant to semantic parsing of SQL with Yale LILY Group. My research interest basically falls in neural semantic parsing.
                 <br>
                 <br>
-                I'm am looking forward to finding an algorithm engineering internship after graduation.
+                I'm am looking forward to finding an algorithm engineering full-time job in the future.
                 <br>
                 <br>
                 To find more information about me, you can take a look at my CV (<a href="https://github.com/1e0ndavid/1e0ndavid.github.io/blob/master/assets/CV/CV_EN_1_3.pdf">English</a>
@@ -39,6 +39,9 @@ permalink: "/about/"
             <p> </p>
             <ul>
                 <li>
+										One paper is just submitted to 2021 NAACL-HLT.
+								</li>
+								<li>
                     <a href="papers/acl19-pastTense.pdf"><b>paper name 1</b></a>.&nbsp;authors.
                      In <i>Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</i>.  2019.
                 </li>
