@@ -1,7 +1,7 @@
 ---
-title:"逻辑哲学论"
-style:post
-catergories:philosophy 维特根斯坦
+title: "逻辑哲学论"
+style: post
+catergories: philosophy 维特根斯坦
 ---
 
 导言：在考察符号论的理论部分中，他谈的是一种在逻辑上完备的语言所必须满足的条件。关于语言，有各种各样的问题：第一，我们使用语言，希望借此来意指某种东西时，我们心中实际发生了什么
