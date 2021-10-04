@@ -22,8 +22,8 @@ minimal: false               # minima-inspired style without box-shadows
 
 navigation:
   - {file: "README.md", icon: address-card}
-  - {file: "index.html", icon: book-open}
-  - {file: "index.html", icon: brain}
+  - {file: "home.html", icon: book-open}
+  - {file: "home.html", icon: brain}
 #  - {file: "old.md", icon: home}
 
 external:                    # see http://fontawesome.com/icons
