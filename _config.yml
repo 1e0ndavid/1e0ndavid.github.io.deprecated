@@ -22,6 +22,7 @@ minimal: false               # minima-inspired style without box-shadows
 
 navigation:
   - {file: "index.html", icon: book-open}
+  - {file: "home.html", icon: book-open}
   - {file: "README.md", icon: address-card}
 #  - {file: "old.md", icon: home}
 
