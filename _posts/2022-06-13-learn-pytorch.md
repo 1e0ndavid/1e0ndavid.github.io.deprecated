@@ -211,6 +211,200 @@ def val(epoch):
 * torch.optim.SGD
 * torch.optim.SparseAdam
 
-第四章：FashionMNIST
+第四章：PyTorch基础实战
 
-比较简单，略
+比较简单，我也不做CV，略
+
+第五章：PyTorch模型定义
+
+5.1 PyTorch模型定义的方式
+
+Module类是torch.nn模块里提供的一个模型构造类(nn.Module)，是所有神经网络模块的基类，我们可以继承它来定义我们想要的模型。PyTorch模型定义应包括两个主要部分：各个部分的初始化`(__init__)`；数据流向定义(forward)，基于nn.Module，我们可以通过Sequential, ModuleList和ModuleDict三种方式定义PyTorch模型。
+
+Sequential，对应模块为nn.Sequential()，当模型的前向计算为简单串联各个层的计算时，Sequential类可以通过更简单的方式定义模型。它可以接收一个子模块的有序字典(OrderedDict)或者一系列字模块作为参数来逐一添加Module的实例，而模型的前向计算就是将这些实例按添加的顺序逐一计算。使用Sequential定义模型的好处在于简单、易读，同时使用Sequential定义的模型不需要再写forward，因为顺序已经定义好了。但缺点是会使得模型定义失去灵活性，比如需要在模型中间加入一个外部输入时就不适合用Sequential的方式实现。结合Sequential和定义方式加以理解：
+
+{% highlight python %}
+class MySequential(nn.Module):
+    from collections import OrderedDict
+    def __init__(self, *args):
+        super(MySequential, self).__init__()
+        if len(args) == 1 and isinstance(args[0], OrderedDict): # 如果传入的是一个OrderedDict
+            for key, module in args[0].items():
+                self.add_module(key, module)  # add_module方法会将module添加进self._modules(一个OrderedDict)
+        else:  # 传入的是一些Module
+            for idx, module in enumerate(args):
+                self.add_module(str(idx), module)
+    def forward(self, input):
+        # self._modules返回一个 OrderedDict，保证会按照成员添加时的顺序遍历成
+        for module in self._modules.values():
+            input = module(input)
+        return input
+{% endhighlight %}
+
+如下是两种用Sequential来定义模型的例子：
+
+{% highlight python %}
+import torch.nn as nn
+net = nn.Sequential(
+        nn.Linear(784, 256),
+        nn.ReLU(),
+        nn.Linear(256, 10), 
+        )
+print(net)
+
+import collections
+import torch.nn as nn
+net2 = nn.Sequential(collections.OrderedDict([
+          ('fc1', nn.Linear(784, 256)),
+          ('relu1', nn.ReLU()),
+          ('fc2', nn.Linear(256, 10))
+          ]))
+print(net2)
+{% endhighlight %}
+
+ModuleList，对应模块为nn.ModuleList()，其接收一个子模块（或层，需属于nn.Module类）的列表作为输入，也可以类似list那样进行append和extend操作。同时，子模块或层的权重也会自动添加到网络中来。
+
+{% highlight python %}
+net = nn.ModuleList([nn.Linear(784, 256), nn.ReLU()])
+net.append(nn.Linear(256, 10)) # # 类似List的append操作
+print(net[-1])  # 类似List的索引访问
+print(net)
+{% endhighlight %}
+
+要特别注意的是，nn.ModuleList并没有定义一个网络，它只是将不同的模块储存在一起。ModuleList中元素的先后顺序并不代表其在网络中的真实位置顺序，需要经过forward函数指定各个层的先后顺序才算完成了模型的定义。具体实现时用for循环即可完成。
+
+{% highlight python %}
+class model(nn.Module):
+  def __init__(self, ...):
+    super().__init__()
+    self.modulelist = ...
+    ...
+    
+  def forward(self, x):
+    for layer in self.modulelist:
+      x = layer(x)
+    return x
+{% endhighlight %}
+
+ModuleDict，对应模块为nn.ModuleDict()，其与ModuleList作用类似，只是ModuleDict能更方便地为神经网络的层添加名称。
+{% highlight python %}
+net = nn.ModuleDict({
+    'linear': nn.Linear(784, 256),
+    'act': nn.ReLU(),
+})
+net['output'] = nn.Linear(256, 10) # 添加
+print(net['linear']) # 访问
+print(net.output)
+print(net)
+{% endhighlight %}
+
+Sequential适用于快速验证结果，因为已经明确了要用哪些层，总结写一下就好了，不需要同时写`__init__`和forward。ModuleList和ModuleDict在某个完全相同的层需要重复出现多次时非常方便实现，可以一行顶多行。当我们需要之前层的信息的时候，比如ResNets中的残差计算，当千层的结果和之前层中的结果进行融合，一般使用ModuleList/ModuleDict比较方便。
+
+5.2 利用模型快速搭建复杂网络
+
+一个U-Net的例子，比较常规，没什么要特别注意的点。
+
+5.3 PyTorc修改模型
+
+修改模型若干层，可以deepcopy某一层然后修改一下参数。添加额外输入，可以在加forward参数个数。添加额外输出，直接加forward的返回值。
+
+5.4 PyTorch模型保存与读取
+
+PyTorch存储模型主要采用pkl, pt, pth三种格式，就使用层面没有区别。
+
+一个PyTorch模型有俩部分：模型结构与权重，其中模型是继承nn.Module的类，权重的数据结构是一个字典。对于单卡而言方式如下没有太大区别，除了大小差了一点：
+
+{% highlight python %}
+unet.state_dict()
+
+torch.save(unet, "./unet_exp.pth")
+loaded_unet = torch.load("./unet_exp.pth")
+unet.state_dict()
+
+torch.save(unet.state_dict(), "./unet_weight_exp.pth")
+loaded_unet_weights = torch.load("./unet_weight_exp.pth")
+unet.load_state_dict(loaded_unet_weights)
+unet.state_dict()
+{% endhighlight %}
+
+对于多卡情况下就不一样了，PyTorch中将模型和数据放到GPU上有两种方式————.cuda()和.to(device)，暂时对前面一种方式讨论。如果要使用多卡训练的话，需要对模型使用torch.nn.DataParallel，代码样例如下：
+
+{% highlight python %}
+os.environ['CUDA_VISIBLE_DEVICES'] = '0' # 如果是多卡改成类似0,1,2
+model = model.cuda()  # 单卡
+model = torch.nn.DataParallel(model).cuda()  # 多卡
+{% endhighlight %}
+
+查看model对应layer名称，可以看到差别在于多卡并行的模型每层的名称前多了一个“module”，如单卡是layer: conv1.weight，多卡是layer: module.conv1.weight。这种模型表示的不同可能会导致模型保存和加载过程中因为单GPU和多GPU环境的不同带来模型不匹配等问题，需要处理一些矛盾点，以下做分类讨论：
+
+* 单卡保存+单卡加载：这个比较简单，即使保存和读取时使用的GPU不同也无妨。
+* 单卡保存+多卡加载：这种情况比较简单，读取单卡保存的模型后，用nn.DataParallel进行分布式训练即可。
+* 多卡保存+单卡加载：此时核心问题是如何去掉权重字典键名中的“module”，以保证模型统一性，对于加载整个模型，直接提取模型的module属性即可。对于加载模型圈子，有多种思路：去除字典里的module麻烦，往model里添加module简单（推荐），这样即便是单卡也能开始训练（相当于分布到单卡上）；遍历字典去除module；使用replace操作去除module。
+
+{% highlight python %}
+import os
+import torch
+from torchvision import models
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '1,2'   #这里替换成希望使用的GPU编号
+
+model = models.resnet152(pretrained=True)
+model = nn.DataParallel(model).cuda()
+
+# 保存+读取整个模型
+torch.save(model, save_dir)
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'   #这里替换成希望使用的GPU编号
+loaded_model = torch.load(save_dir)
+loaded_model = loaded_model.module
+{% endhighlight %}
+
+{% highlight python %}
+import os
+import torch
+from torchvision import models
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2'   #这里替换成希望使用的GPU编号
+
+model = models.resnet152(pretrained=True)
+model = nn.DataParallel(model).cuda()
+
+# 保存+读取模型权重
+torch.save(model.state_dict(), save_dir)
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'   #这里替换成希望使用的GPU编号
+loaded_dict = torch.load(save_dir)
+loaded_model = models.resnet152()   #注意这里需要对模型结构有定义
+loaded_model = nn.DataParallel(loaded_model).cuda()
+loaded_model.state_dict = loaded_dict
+{% endhighlight %}
+
+* 多卡保存+多卡加载：由于模型保存和加载都用多卡，因此不存在模型层名前缀不同的问题。但多卡状态下存在一个device（使用的GPU）匹配的问题，既保存整个模型时会同时保存所使用的GPU id等信息，读取时若这些信息和当前使用的GPU信息不符可能会报错或者程序不按预定状态运行，具体表现为：1. 读取整个模型再使用nn.DataParallel进行分布式训练设置————这种情况很可能会造成保存的整个模型中GPU id和读取环境下设置的GPU id不符，训练时数据所在device和模型所在device不一致而报错。2. 读取整个模型而不使用nn.DataParallel进行分布式训练设置————这种情况可能不会报错，测试中发现程序会自动使用设备的前n个GPU进行训练（n是保存的模型使用的GPU个数）。此时如果指定的GPU个数少于n，则会报错。在这种情况下，只有保存模型时环境的device id和读取模型时环境的device id一致，程序才会按照预期在指定的GPU上进行分布式训练。相比之下，读取模型权重，之后再使用nn.DataParallel进行分布式训练设置则没有问题。因此多卡模式下建议使用权重的方式存储和读取模型。如果只有保存的整个模型，也可以采用提取权重的方式构建新的模型。
+
+{% highlight python %}
+import os
+import torch
+from torchvision import models
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2'   #这里替换成希望使用的GPU编号
+
+model = models.resnet152(pretrained=True)
+model = nn.DataParallel(model).cuda()
+
+# 保存+读取模型权重，强烈建议！！
+torch.save(model.state_dict(), save_dir)
+loaded_dict = torch.load(save_dir)
+loaded_model = models.resnet152()   #注意这里需要对模型结构有定义
+loaded_model = nn.DataParallel(loaded_model).cuda()
+loaded_model.state_dict = loaded_dict
+{% endhighlight %}
+
+{% highlight python %}
+# 读取整个模型
+loaded_whole_model = torch.load(save_dir)
+loaded_model = models.resnet152()   #注意这里需要对模型结构有定义
+loaded_model.state_dict = loaded_whole_model.state_dict
+loaded_model = nn.DataParallel(loaded_model).cuda()
+{% endhighlight %}
+
+另外，上面所有对于loaded_model修改权重字典的形式都是通过赋值来实现的，在PyTorch中还可以通过"load_state_dict"函数来实现。
